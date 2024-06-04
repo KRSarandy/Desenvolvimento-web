@@ -19,8 +19,8 @@
           <li style="padding: 10px;"><button type="button" class="btn btn-outline-dark" onclick="document.location='Sobre mim.HTML'">Sobre mim</button></li>
           <li style="padding: 10px;"><button type="button" class="btn btn-outline-dark" onclick="document.location='Projetos.HTML'">Projetos</button></li>
           <li style="padding: 10px;"><button type="button" class="btn btn-outline-dark" onclick="document.location='Formação.HTML'">Formação</button></li>
-          <li style="padding: 10px;"><button type="button" class="btn btn-outline-dark active" onclick="document.location='Contatos.HTML'">Contatos</button></li>
           <li style="padding: 10px;"><button type="button" class="btn btn-outline-dark" onclick="document.location='Atuação Profissional.HTML'">Atuação Profissional</button></li>
+          <li style="padding: 10px;"><button type="button" class="btn btn-outline-dark active" onclick="document.location='Contatos.HTML'">Contatos</button></li>
           <li class="nav-item dropdown">
         <a class="btn btn-outline-dark" style="position: relative; top: 10px; left: 10px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
      Tecnologias Utilizadas </a>
@@ -33,13 +33,48 @@
           </ul>
       </div>
       <br><br>
-      <table border="2" style="left: 50px; position: relative; width: 400px;">
-      <ul><tr>
-        <th><li style="left: 10px; position: relative;">(32)998392287</li></th>
-        <th><li style="left: 30px; position: relative;">krsarandy@gmail.com</li></th>
-      </tr></ul>
+      <div class="f_div">
+        <form action="Contatos.html">
+            <label for="f_name">Nome:</label>
+            <input type="text" id="f_name" name="f_name">
+            
+            <label for="f_email">E-mail:</label>
+            <input type="email" id="f_email" name="f_email">
+    
+            <br><br>
+    
+            <textarea type="text" id="f_msg" name="f_mens" cols="50" rows="5">Enviar Mensagem</textarea>
+    
+            <br>
+    
+            <input type="radio" id="f_masculino" value="msc" name="f_genero">
+            <label for="f_masculino">Masculino</label>
+            <br>
+            <input type="radio" id="f_feminino" value="fmn" name="f_genero">
+            <label for="f_feminino">Feminino</label>
+            <br>
+            <input type="radio" id="f_opinar" value="nop" name="f_genero">
+            <label for="f_opinar">Outro</label>
+    
+            <br><br>
+    
+            <label for="f_nasc">Data de Nascimento</label>
+            <input type="date" id="f_nasc" name="f_nasc">
+            <br>
+    
+            <br><br>
+    
+            <input type="checkbox" id="f_respostaemail">
+            <label for="f_respostaemail">Receber resposta por email</label>
+            <br>
+            <input type="checkbox" id="f_respostacelular">
+            <label for="f_respostacelular">Receber resposta por SMS</label>
+            <br><br>
+            <input type="reset" value="Cancelar">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
       </table>
-      <button onclick="document.location='formulario.HTML'" class="b_form">Enviar formulário</button> 
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       <div class="container" style="background-color: rgb(201, 148, 15);">
         <footer class="py-3 my-4">
